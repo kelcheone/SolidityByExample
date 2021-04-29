@@ -4,6 +4,8 @@ const IfElse = artifacts.require("IfElse");
 const Loop = artifacts.require("Loop");
 const Mapping = artifacts.require("Mapping", 'NestedMapping');
 const Array = artifacts.require("Array", 'CompactArray');
+const Enum = artifacts.require("Enum");
+const Structs = artifacts.require("Todos");
 
 
 module.exports= function(deployer){
@@ -13,4 +15,6 @@ module.exports= function(deployer){
     deployer.deploy(Loop);
     deployer.deploy(Mapping);
     deployer.deploy(Array);
+    deployer.deploy(Enum);
+    deployer.deploy(Structs);
 };
