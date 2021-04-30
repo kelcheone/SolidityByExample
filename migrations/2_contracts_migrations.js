@@ -9,6 +9,7 @@ const Structs = artifacts.require("Todos");
 const Error = artifacts.require("Error");
 const Events = artifacts.require("Event");
 const Constructor = artifacts.require("e");
+const Inheritance = artifacts.require("F");
 
 
 module.exports= function(deployer){
@@ -23,4 +24,5 @@ module.exports= function(deployer){
     deployer.deploy(Error);
     deployer.deploy(Events);
     deployer.deploy(Constructor);
+    deployer.deploy(Inheritance);
 };
