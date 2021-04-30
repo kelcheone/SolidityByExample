@@ -8,6 +8,7 @@ const Enum = artifacts.require("Enum");
 const Structs = artifacts.require("Todos");
 const Error = artifacts.require("Error");
 const Events = artifacts.require("Event");
+const Constructor = artifacts.require("e");
 
 
 module.exports= function(deployer){
@@ -21,4 +22,5 @@ module.exports= function(deployer){
     deployer.deploy(Structs);
     deployer.deploy(Error);
     deployer.deploy(Events);
+    deployer.deploy(Constructor);
 };
