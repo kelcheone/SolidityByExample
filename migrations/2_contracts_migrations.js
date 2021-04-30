@@ -7,6 +7,7 @@ const Array = artifacts.require("Array", 'CompactArray');
 const Enum = artifacts.require("Enum");
 const Structs = artifacts.require("Todos");
 const Error = artifacts.require("Error");
+const Modifiers = artifacts.require("FunctionModifier");
 
 
 module.exports= function(deployer){
@@ -19,4 +20,5 @@ module.exports= function(deployer){
     deployer.deploy(Enum);
     deployer.deploy(Structs);
     deployer.deploy(Error);
+    deployer.deploy(Modifiers);
 };
