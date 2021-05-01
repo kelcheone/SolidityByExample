@@ -12,6 +12,7 @@ const Constructor = artifacts.require("e");
 const Inheritance = artifacts.require("F");
 const ShaddowingISV = artifacts.require("C");
 const CallingParentContracts = artifacts.require("D");
+const Interface = artifacts.require("UniswapExample");
 
 
 module.exports= function(deployer){
@@ -29,4 +30,5 @@ module.exports= function(deployer){
     deployer.deploy(Inheritance);
     deployer.deploy(ShaddowingISV);
     deployer.deploy(CallingParentContracts);
+    deployer.deploy(Interface);
 };
