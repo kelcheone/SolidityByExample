@@ -11,6 +11,7 @@ const Events = artifacts.require("Event");
 const Constructor = artifacts.require("e");
 const Inheritance = artifacts.require("F");
 const ShaddowingISV = artifacts.require("C");
+const CallingParentContracts = artifacts.require("D");
 
 
 module.exports= function(deployer){
@@ -27,4 +28,5 @@ module.exports= function(deployer){
     deployer.deploy(Constructor);
     deployer.deploy(Inheritance);
     deployer.deploy(ShaddowingISV);
+    deployer.deploy(CallingParentContracts);
 };
