@@ -10,6 +10,7 @@ const Error = artifacts.require("Error");
 const Events = artifacts.require("Event");
 const Constructor = artifacts.require("e");
 const Inheritance = artifacts.require("F");
+const ShaddowingISV = artifacts.require("C");
 
 
 module.exports= function(deployer){
@@ -25,4 +26,5 @@ module.exports= function(deployer){
     deployer.deploy(Events);
     deployer.deploy(Constructor);
     deployer.deploy(Inheritance);
+    deployer.deploy(ShaddowingISV);
 };
