@@ -12,6 +12,7 @@ const Constructor = artifacts.require("e");
 const Inheritance = artifacts.require("F");
 const ShaddowingISV = artifacts.require("C");
 const CallingParentContracts = artifacts.require("D");
+const KELToken = artifacts.require("KelToken");
 const Interface = artifacts.require("UniswapExample");
 const Mappings2 = artifacts.require("Map2");
 
@@ -34,5 +35,6 @@ module.exports= function(deployer){
     deployer.deploy(CallingParentContracts);
     deployer.deploy(Interface);
     deployer.deploy(Mappings2);
+    deployer.deploy(KELToken);
     
 };
