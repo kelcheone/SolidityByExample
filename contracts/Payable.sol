@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.4;
 
-contract Name {
-    // payablr address can receive Ether.
+contract Payable {
+    // payable address can receive Ether.
 
     address payable public owner;
 
