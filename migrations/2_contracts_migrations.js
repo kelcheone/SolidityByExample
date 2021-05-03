@@ -18,6 +18,8 @@ const Mappings2 = artifacts.require("Map2");
 const Payable = artifacts.require("Payable");
 const RecieveEther = artifacts.require("RecieveEther");
 const SendEther = artifacts.require("SendEther");
+const Fallback = artifacts.require("Fallback");
+const Fallback = artifacts.require("SendToFallback");
 
 
 
@@ -42,5 +44,6 @@ module.exports= function(deployer){
     deployer.deploy(Payable);
     deployer.deploy(RecieveEther);
     deployer.deploy(SendEther);
+    deployer.deploy(Fallback);
     
 };
