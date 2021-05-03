@@ -16,6 +16,7 @@ const KELToken = artifacts.require("KelToken");
 const Interface = artifacts.require("UniswapExample");
 const Mappings2 = artifacts.require("Map2");
 const Payable = artifacts.require("Payable");
+const RecieveEther = artifacts.require("RecieveEther);
 
 
 
@@ -38,5 +39,6 @@ module.exports= function(deployer){
     deployer.deploy(Mappings2);
     deployer.deploy(KELToken);
     deployer.deploy(Payable);
+    deployer.deploy(RecieveEther);
     
 };
