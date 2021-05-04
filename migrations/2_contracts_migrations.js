@@ -20,6 +20,8 @@ const RecieveEther = artifacts.require("RecieveEther");
 const SendEther = artifacts.require("SendEther");
 const Fallback = artifacts.require("Fallback" && "SendToFallback") ;
 const Call = artifacts.require("Receiver" && "Caller") ;
+const Delegatecall1 = artifacts.require("DC1") ;
+const Delegatecall2 = artifacts.require("DC2");
 
 
 module.exports= function(deployer){
@@ -45,5 +47,7 @@ module.exports= function(deployer){
     deployer.deploy(SendEther);
     deployer.deploy(Fallback);
     deployer.deploy(Call);
+    deployer.deploy(Delegatecall1);
+    deployer.deploy(Delegatecall2);
     
 };
